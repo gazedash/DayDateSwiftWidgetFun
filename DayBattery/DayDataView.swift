@@ -31,15 +31,24 @@ struct DayDataView: View {
          })
 
         let formatter = DateFormatter()
-
         formatter.dateFormat = "yyyy-MM-dd"
-
-        let str = formatter.string(from: Date())
+        let date = Date()
+        let str = formatter.string(from: date)
         
-//        HStack(content: {
-//            Text(str)
-            Text(dayData.percent).gesture(drag).background(Color.green).offset(x: gridDraggedX, y: gridDraggedY).font(.system(size:20))
-//        })
+        let hour = Calendar.current.component(.hour, from: date)
+        let minute = Calendar.current.component(.minute, from: date)
+        let per = (Double(hour) + (Double(minute) / 60)) / 24
+        
+        let numformatter = NumberFormatter()
+        numformatter.numberStyle = NumberFormatter.Style.decimal
+        numformatter.maximumFractionDigits = 1
+        
+        let hourPers = "\( Float((per * 100).rounded(.up) / 100))"
+        
+        return HStack(content: {
+            Text(hourPers).background(Color.red)
+.gesture(drag).background(Color.green).offset(x: gridDraggedX, y: gridDraggedY).font(.system(size:20))
+        })
     }
 }
 
