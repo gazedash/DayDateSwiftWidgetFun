@@ -1,15 +1,13 @@
-//
-//  ContentView.swift
-//  DayBattery
-//
-//  Created by Andrey Efremov on 20.07.2020.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    let dayDatas = [DayData(percent: "low battery", date: Date())]
     var body: some View {
-        Text("Hello, world!").padding()
+        VStack (spacing: 20) {
+            ForEach(dayDatas) {
+                dayData in DayDataView(dayData: dayData)
+            }
+        }
     }
 }
 

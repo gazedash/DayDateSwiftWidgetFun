@@ -13,6 +13,17 @@
 		E9D1C8D524C5D51600EDC848 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D1C8D424C5D51600EDC848 /* Preview Assets.xcassets */; };
 		E9D1C8E024C5D51700EDC848 /* DayBatteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C8DF24C5D51700EDC848 /* DayBatteryTests.swift */; };
 		E9D1C8EB24C5D51700EDC848 /* DayBatteryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C8EA24C5D51700EDC848 /* DayBatteryUITests.swift */; };
+		E9D1C8FD24C5D5D100EDC848 /* DayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C8FC24C5D5D100EDC848 /* DayData.swift */; };
+		E9D1C90524C5DB9B00EDC848 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D1C90424C5DB9B00EDC848 /* WidgetKit.framework */; };
+		E9D1C90724C5DB9B00EDC848 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D1C90624C5DB9B00EDC848 /* SwiftUI.framework */; };
+		E9D1C90A24C5DB9B00EDC848 /* DayBattery_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C90924C5DB9B00EDC848 /* DayBattery_Widget.swift */; };
+		E9D1C90D24C5DB9E00EDC848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D1C90C24C5DB9E00EDC848 /* Assets.xcassets */; };
+		E9D1C90F24C5DB9E00EDC848 /* DayBattery_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C90B24C5DB9B00EDC848 /* DayBattery_Widget.intentdefinition */; };
+		E9D1C91024C5DB9E00EDC848 /* DayBattery_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C90B24C5DB9B00EDC848 /* DayBattery_Widget.intentdefinition */; };
+		E9D1C91324C5DB9E00EDC848 /* DayBattery-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9D1C90224C5DB9B00EDC848 /* DayBattery-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9D1C91824C5DC2800EDC848 /* DayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C8FC24C5D5D100EDC848 /* DayData.swift */; };
+		E9D1C91D24C5DFA500EDC848 /* DayDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C91C24C5DFA500EDC848 /* DayDataView.swift */; };
+		E9D1C91E24C5DFA500EDC848 /* DayDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1C91C24C5DFA500EDC848 /* DayDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +41,28 @@
 			remoteGlobalIDString = E9D1C8C924C5D51500EDC848;
 			remoteInfo = DayBattery;
 		};
+		E9D1C91124C5DB9E00EDC848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D1C8C224C5D51500EDC848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D1C90124C5DB9B00EDC848;
+			remoteInfo = "DayBattery-WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9D1C91724C5DB9E00EDC848 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E9D1C91324C5DB9E00EDC848 /* DayBattery-WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9D1C8CA24C5D51500EDC848 /* DayBattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayBattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +77,15 @@
 		E9D1C8E624C5D51700EDC848 /* DayBatteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayBatteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D1C8EA24C5D51700EDC848 /* DayBatteryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBatteryUITests.swift; sourceTree = "<group>"; };
 		E9D1C8EC24C5D51700EDC848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D1C8FC24C5D5D100EDC848 /* DayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayData.swift; sourceTree = "<group>"; };
+		E9D1C90224C5DB9B00EDC848 /* DayBattery-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DayBattery-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D1C90424C5DB9B00EDC848 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E9D1C90624C5DB9B00EDC848 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E9D1C90924C5DB9B00EDC848 /* DayBattery_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBattery_Widget.swift; sourceTree = "<group>"; };
+		E9D1C90B24C5DB9B00EDC848 /* DayBattery_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DayBattery_Widget.intentdefinition; sourceTree = "<group>"; };
+		E9D1C90C24C5DB9E00EDC848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9D1C90E24C5DB9E00EDC848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D1C91C24C5DFA500EDC848 /* DayDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +110,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9D1C8FF24C5DB9B00EDC848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D1C90724C5DB9B00EDC848 /* SwiftUI.framework in Frameworks */,
+				E9D1C90524C5DB9B00EDC848 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +128,8 @@
 				E9D1C8CC24C5D51500EDC848 /* DayBattery */,
 				E9D1C8DE24C5D51700EDC848 /* DayBatteryTests */,
 				E9D1C8E924C5D51700EDC848 /* DayBatteryUITests */,
+				E9D1C90824C5DB9B00EDC848 /* DayBattery-Widget */,
+				E9D1C90324C5DB9B00EDC848 /* Frameworks */,
 				E9D1C8CB24C5D51500EDC848 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +140,7 @@
 				E9D1C8CA24C5D51500EDC848 /* DayBattery.app */,
 				E9D1C8DB24C5D51700EDC848 /* DayBatteryTests.xctest */,
 				E9D1C8E624C5D51700EDC848 /* DayBatteryUITests.xctest */,
+				E9D1C90224C5DB9B00EDC848 /* DayBattery-WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +150,8 @@
 			children = (
 				E9D1C8CD24C5D51500EDC848 /* DayBatteryApp.swift */,
 				E9D1C8CF24C5D51500EDC848 /* ContentView.swift */,
+				E9D1C91C24C5DFA500EDC848 /* DayDataView.swift */,
+				E9D1C8FC24C5D5D100EDC848 /* DayData.swift */,
 				E9D1C8D124C5D51600EDC848 /* Assets.xcassets */,
 				E9D1C8D624C5D51600EDC848 /* Info.plist */,
 				E9D1C8D324C5D51600EDC848 /* Preview Content */,
@@ -130,6 +185,26 @@
 			path = DayBatteryUITests;
 			sourceTree = "<group>";
 		};
+		E9D1C90324C5DB9B00EDC848 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1C90424C5DB9B00EDC848 /* WidgetKit.framework */,
+				E9D1C90624C5DB9B00EDC848 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9D1C90824C5DB9B00EDC848 /* DayBattery-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1C90924C5DB9B00EDC848 /* DayBattery_Widget.swift */,
+				E9D1C90B24C5DB9B00EDC848 /* DayBattery_Widget.intentdefinition */,
+				E9D1C90C24C5DB9E00EDC848 /* Assets.xcassets */,
+				E9D1C90E24C5DB9E00EDC848 /* Info.plist */,
+			);
+			path = "DayBattery-Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +215,12 @@
 				E9D1C8C624C5D51500EDC848 /* Sources */,
 				E9D1C8C724C5D51500EDC848 /* Frameworks */,
 				E9D1C8C824C5D51500EDC848 /* Resources */,
+				E9D1C91724C5DB9E00EDC848 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9D1C91224C5DB9E00EDC848 /* PBXTargetDependency */,
 			);
 			name = DayBattery;
 			productName = DayBattery;
@@ -186,6 +263,23 @@
 			productReference = E9D1C8E624C5D51700EDC848 /* DayBatteryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E9D1C90124C5DB9B00EDC848 /* DayBattery-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D1C91424C5DB9E00EDC848 /* Build configuration list for PBXNativeTarget "DayBattery-WidgetExtension" */;
+			buildPhases = (
+				E9D1C8FE24C5DB9B00EDC848 /* Sources */,
+				E9D1C8FF24C5DB9B00EDC848 /* Frameworks */,
+				E9D1C90024C5DB9B00EDC848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DayBattery-WidgetExtension";
+			productName = "DayBattery-WidgetExtension";
+			productReference = E9D1C90224C5DB9B00EDC848 /* DayBattery-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +300,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = E9D1C8C924C5D51500EDC848;
 					};
+					E9D1C90124C5DB9B00EDC848 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = E9D1C8C524C5D51500EDC848 /* Build configuration list for PBXProject "DayBattery" */;
@@ -224,6 +321,7 @@
 				E9D1C8C924C5D51500EDC848 /* DayBattery */,
 				E9D1C8DA24C5D51700EDC848 /* DayBatteryTests */,
 				E9D1C8E524C5D51700EDC848 /* DayBatteryUITests */,
+				E9D1C90124C5DB9B00EDC848 /* DayBattery-WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +350,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9D1C90024C5DB9B00EDC848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D1C90D24C5DB9E00EDC848 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,8 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D1C8FD24C5D5D100EDC848 /* DayData.swift in Sources */,
+				E9D1C91D24C5DFA500EDC848 /* DayDataView.swift in Sources */,
 				E9D1C8D024C5D51500EDC848 /* ContentView.swift in Sources */,
 				E9D1C8CE24C5D51500EDC848 /* DayBatteryApp.swift in Sources */,
+				E9D1C91024C5DB9E00EDC848 /* DayBattery_Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +389,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9D1C8FE24C5DB9B00EDC848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D1C91824C5DC2800EDC848 /* DayData.swift in Sources */,
+				E9D1C90A24C5DB9B00EDC848 /* DayBattery_Widget.swift in Sources */,
+				E9D1C90F24C5DB9E00EDC848 /* DayBattery_Widget.intentdefinition in Sources */,
+				E9D1C91E24C5DFA500EDC848 /* DayDataView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +412,11 @@
 			isa = PBXTargetDependency;
 			target = E9D1C8C924C5D51500EDC848 /* DayBattery */;
 			targetProxy = E9D1C8E724C5D51700EDC848 /* PBXContainerItemProxy */;
+		};
+		E9D1C91224C5DB9E00EDC848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9D1C90124C5DB9B00EDC848 /* DayBattery-WidgetExtension */;
+			targetProxy = E9D1C91124C5DB9E00EDC848 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +540,7 @@
 		E9D1C8F024C5D51700EDC848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +563,7 @@
 		E9D1C8F124C5D51700EDC848 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +667,48 @@
 			};
 			name = Release;
 		};
+		E9D1C91524C5DB9E00EDC848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BU2W49R8M;
+				INFOPLIST_FILE = "DayBattery-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aefremov.DayBattery.DayBattery-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9D1C91624C5DB9E00EDC848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BU2W49R8M;
+				INFOPLIST_FILE = "DayBattery-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aefremov.DayBattery.DayBattery-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +744,15 @@
 			buildConfigurations = (
 				E9D1C8F624C5D51700EDC848 /* Debug */,
 				E9D1C8F724C5D51700EDC848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D1C91424C5DB9E00EDC848 /* Build configuration list for PBXNativeTarget "DayBattery-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D1C91524C5DB9E00EDC848 /* Debug */,
+				E9D1C91624C5DB9E00EDC848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
